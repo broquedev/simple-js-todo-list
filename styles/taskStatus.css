@@ -1,0 +1,15 @@
+.status__tasks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom: .5em;
+    padding: 1em;
+    border-bottom: solid 2px var(--color-dark);
+}
+
+.status__item {
+    border-bottom: solid 2px var(--color-dark);
+    padding-top: .5em;
+    font-size: 1em;
+}

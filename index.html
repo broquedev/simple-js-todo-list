@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+    <title>JS Todo List</title>
+</head>
+<body>
+
+    <div class="container">
+                
+        <h1 class="title">Todo List</h1>
+        
+        <div class="status__tasks">
+            <form class="form">
+                <label for="task"></label>
+                <input type="text" id="task" class="form__task" placeholder="Add your tasks">
+                <button class="form__button">Add</button>
+            </form>
+
+            <div class="status__item">Total <span id="total">0</span></div>
+            <div class="status__item">Todo <span id="todo">0</span></div>
+            <div class="status__item">Done <span id="done">0</span></div>
+        </div>
+
+        <ul id="list" class="task__list">
+            <!-- link javascript add items to list -->
+        </ul>
+
+        <dialog id="message" class="error__message">
+            <h2>Attention</h2>
+            <p>This item is already on the list.</p>    
+            <button id="closeButton" class="close__button">Close</button>        
+        </dialog>
+
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
